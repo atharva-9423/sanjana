@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Final Birthday Wish for Sanjana</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Animated Stars Background -->
+        <div class="stars-bg">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-item active" data-section="home">Beginning</div>
+            <div class="nav-item" data-section="memories">Memories</div>
+            <div class="nav-item" data-section="wishes">Wishes</div>
+            <div class="nav-item" data-section="farewell">Farewell</div>
+        </nav>
+
+        <!-- Main Sections -->
+        <div class="sections-container">
+            <!-- Home Section -->
+            <section class="section active" id="home">
+                <div class="hero-content">
+                    <div class="date-container">
+                        <div class="date-text">July 6th, 2025</div>
+                        <div class="occasion">A Birthday & A Goodbye</div>
+                    </div>
+
+                    <h1 class="main-title">Happy Birthday, Sanjana ♕</h1>
+                    <p class="subtitle">On this special day, as we celebrate you and bid farewell</p>
+
+                    <div class="intro-message">
+                        <p>Today marks not just another year of your beautiful life, but also the crossroads where our paths diverge. Though we may never meet again, the impact you've had on my life will echo through eternity.</p>
+                    </div>
+
+                    <button class="start-btn" id="startJourney">Begin This Journey Together</button>
+                </div>
+
+                <!-- Photo Frame -->
+                <div class="photo-container">
+                    <div class="photo-frame" id="photoFrame">
+                        <div class="photo-border">
+                            <div class="photo-placeholder">
+                                <img src="/assets/sanjana.png" 
+                                 alt="Sanjana's Photo" 
+                                 class="profile-photo" 
+                                 id="profilePhoto" />
+                            <div class="photo-overlay">
+                                <div class="photo-text">Sanjana</div>
+                                <div class="photo-subtitle">Beautiful Soul</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frame-shine"></div>
+                </div>
+            </section>
+
+            <!-- Memories Section -->
+            <section class="section" id="memories">
+                <div class="section-header">
+                    <h2>Cherished Memories</h2>
+                    <p>Moments that will forever live in my heart</p>
+                </div>
+
+                <div class="memories-container">
+                    <div class="memory-card">
+                        <div class="memory-icon">🌅</div>
+                        <h3>The Beginning</h3>
+                        <p>When I first met you, I knew my life had changed forever. Your smile lit up the room and my heart in ways I never thought possible.</p>
+                    </div>
+
+                    <div class="memory-card">
+                        <div class="memory-icon">💫</div>
+                        <h3>Growing Together</h3>
+                        <p>Every conversation we shared, every laugh we had, every moment of understanding - they all contributed to the beautiful tapestry of our connection.</p>
+                    </div>
+
+                    <div class="memory-card">
+                        <div class="memory-icon">🌸</div>
+                        <h3>Your Beautiful Soul</h3>
+                        <p>Your kindness, your intelligence, your grace - everything about you made me a better person. You taught me what true beauty looks like.</p>
+                    </div>
+
+                    <div class="memory-card">
+                        <div class="memory-icon">⭐</div>
+                        <h3>Lessons Learned</h3>
+                        <p>Through you, I learned that some connections transcend time and distance. What we shared was real, pure, and transformative.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wishes Section -->
+            <section class="section" id="wishes">
+                <div class="section-header">
+                    <h2>My Birthday Wishes for You</h2>
+                    <p>From the depths of my heart to yours</p>
+                </div>
+
+                <div class="wishes-container">
+                    <div class="wish-card active">
+                        <div class="wish-number">01</div>
+                        <h3>May Your Dreams Soar</h3>
+                        <p>I wish for you to achieve every dream you've ever whispered to the stars. You have the strength, intelligence, and grace to conquer any mountain that stands before you.</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-number">02</div>
+                        <h3>May Love Find You</h3>
+                        <p>I hope you find someone who loves you the way you deserve - completely, unconditionally, and with the same intensity that you bring to everything you do.</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-number">03</div>
+                        <h3>May You Remember Your Worth</h3>
+                        <p>Never forget how extraordinary you are. You are deserving of all the happiness, success, and love this world has to offer. You are enough, just as you are.</p>
+                    </div>
+
+                    <div class="wish-card">
+                        <div class="wish-number">04</div>
+                        <h3>May Our Memories Live On</h3>
+                        <p>Though we part ways, I hope the memories we created together bring you comfort and joy whenever you need them. They will forever be treasures in my heart.</p>
+                    </div>
+                </div>
+
+                <div class="wish-navigation">
+                    <button class="nav-btn prev" onclick="changeWish(-1)">←</button>
+                    <div class="wish-indicators">
+                        <span class="indicator active" onclick="showWish(0)"></span>
+                        <span class="indicator" onclick="showWish(1)"></span>
+                        <span class="indicator" onclick="showWish(2)"></span>
+                        <span class="indicator" onclick="showWish(3)"></span>
+                    </div>
+                    <button class="nav-btn next" onclick="changeWish(1)">→</button>
+                </div>
+            </section>
+
+            <!-- Farewell Section -->
+            <section class="section" id="farewell">
+                <div class="farewell-content">
+                    <h2>Until We Meet in Another Life</h2>
+
+                    <div class="farewell-message">
+                        <p>As this chapter closes and we walk different paths, I want you to know that knowing you has been one of life's greatest gifts. You've left an indelible mark on my soul.</p>
+
+                        <p>Though distance may separate us and time may pass, the love and respect I have for you will remain constant. You will always hold a special place in my heart.</p>
+
+                        <p>I hope that wherever life takes you, you remember that you are loved, you are valued, and you made a difference in someone's life. Thank you for being you.</p>
+
+                        <p class="final-wish">Happy 18th Birthday, Sanjana. May this new year bring you everything your heart desires and more.</p>
+                    </div>
+
+                    <div class="signature">
+                        <p>With all my love and best wishes,</p>
+                        <p class="signature-name">Forever in your corner</p>
+                    </div>
+
+                    <button class="final-btn" id="finalGoodbye">Send My Love to the Stars</button>
+                </div>
+
+                <!-- Floating Hearts -->
+                <div class="floating-hearts">
+                    <div class="heart">💝</div>
+                    <div class="heart">💖</div>
+                    <div class="heart">💕</div>
+                    <div class="heart">💗</div>
+                    <div class="heart">💞</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-dot active" data-section="0"></div>
+            <div class="scroll-dot" data-section="1"></div>
+            <div class="scroll-dot" data-section="2"></div>
+            <div class="scroll-dot" data-section="3"></div>
+        </div>
+
+        <!-- Musical Note -->
+        <div class="music-note" id="musicNote">♪</div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
